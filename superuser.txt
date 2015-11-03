@@ -1,0 +1,3 @@
+username: 2015EBME370G20
+password: ebme370g20
+email: ebme370g20@case.edu
