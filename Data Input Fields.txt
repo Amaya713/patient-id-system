@@ -1,0 +1,28 @@
+1) Patient Name (separate fields for first, middle and last names)
+2) Patient D.O.B (enter in specified format)
+3) Patient Allergies (text field >250 char)
+4) Procedure Name (drop down list)
+	4.1: cataract surgery
+	4.2: trabeculectomy
+	4.3: catract surgery/trabeculectomy combined
+	4.4: Ahmed valve
+	4.5: Chalazion excision
+	4.6: Retinal Detachment repair
+	4.7: Epiretinal Membrane peel
+	4.8: Vitrectormy
+5) Eye (R/L radio button)
+	5.1: Lens, can be chosen from a drop down list
+6) Set for (drop down with options)
+	6.1: Distance (text field <250 char)
+	6.2: Near
+		6.2.1:-1.00
+		6.2.2:-1.25
+		6.2.3:-1.50
+		6.2.4:-1.75
+		6.2.5:-2.00
+		6.2.6:-2.25
+		6.2.7:-2.50
+7) LenSx (yes/no radio buttons)
+	7.1 ORA (yes/no radio buttons)
+	7.2 IStent (yes/no radio buttons) 
+8) Power (edited later, not present in initial screen)
