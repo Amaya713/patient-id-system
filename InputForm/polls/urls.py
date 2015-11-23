@@ -5,7 +5,7 @@ Created on Sun Nov 15 20:26:45 2015
 @author: Abhishektha
 """
 
-from django.conf.urls import url
+from django.conf.urls import include, url
 from . import views
 
 urlpatterns = [
