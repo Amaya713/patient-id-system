@@ -20,6 +20,11 @@ PROCEDURE_NAMES = (
 	('v','vitrectormy'),
 )
 
+SETFOROP = (
+	('Distance','Distance'),
+	('Near','Near'),
+)
+
 SETFOR = (
 	(-1.00,'-1.90'),
 	(-1.25,'-1.25'),
@@ -40,14 +45,16 @@ class Patient(models.Model):
 	author = models.ForeignKey('auth.User')
 	edited_date = models.DateTimeField(default=timezone.now)
 	title = models.CharField(max_length=200)
-	DOB = models.CharField(max_length=200)
+	DOB = models.DateField(default=timezone.now)
 	Allergies = models.TextField()
 	ProcedureName = models.CharField(max_length=200, choices = PROCEDURE_NAMES)
 	Eye = models.CharField(max_length=2, choices = EYES)
 	Lens = models.CharField(max_length=200)
-	SetforDistance = models.CharField(max_length=200)
+	SetforDistance = models.CharField(max_length=200, choices = SETFOROP)
 	Near = models.CharField(max_length=200, choices = SETFOR)
 	Lensx = models.CharField(max_length=200, choices = YESNO)
+	ORA = models.CharField(max_length=200, choices = YESNO)
+	IStent = models.CharField(max_length=200, choices = YESNO)
 	Power = models.CharField(max_length=200)
 	Comments = models.TextField()
 	
