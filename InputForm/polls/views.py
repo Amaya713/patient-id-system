@@ -23,7 +23,7 @@ def patient_new(request):
 			Patient.author = request.user
 			Patient.edited_date = timezone.now()
 			Patient.save()
-			return HttpResponse("Done")
+			return redirect('polls.views.init')
 		else:
 			print form.errors
 	else:

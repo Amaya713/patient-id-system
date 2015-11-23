@@ -26,18 +26,18 @@ SETFOROP = (
 )
 
 SETFOR = (
-	(-1.00,'-1.90'),
-	(-1.25,'-1.25'),
-	(-1.50,'-1.50'),
-	(-1.75,'-1.75'),
-	(-2.00,'-2.00'),
-	(-2.25,'-2.25'),
-	(-2.50,'-2.50'),
+	('-1.90','-1.90'),
+	('-1.25','-1.25'),
+	('-1.50','-1.50'),
+	('-1.75','-1.75'),
+	('-2.00','-2.00'),
+	('-2.25','-2.25'),
+	('-2.50','-2.50'),
 )
 
 YESNO = (
-	(True,'Yes'),
-	(False,'No')
+	('Yes','Yes'),
+	('No','No')
 )
 
 
@@ -52,9 +52,9 @@ class Patient(models.Model):
 	Lens = models.CharField(max_length=200)
 	SetforDistance = models.CharField(max_length=200, choices = SETFOROP)
 	Near = models.CharField(max_length=200, choices = SETFOR)
-	Lensx = models.CharField(max_length=200, choices = YESNO)
-	ORA = models.CharField(max_length=200, choices = YESNO)
-	IStent = models.CharField(max_length=200, choices = YESNO)
+	Lensx = models.BooleanField()
+	ORA = models.BooleanField()
+	IStent = models.BooleanField()
 	Power = models.CharField(max_length=200)
 	Comments = models.TextField()
 	
