@@ -1,5 +1,26 @@
+{% load staticfiles %}
+
 <html>
-	<form action="{% url 'patient_new' %}">
-		<input type="submit" value="New Patient">
-	</form>
+	<head>
+		<title>Patient Identification System</title>
+		<link rel="stylesheet" href="{% static 'css/polls.css' %}">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+	</head>
+	<body>
+		<div class="page-header">
+			<h1>Patient Identification System</h1>
+		</div>
+		<div class="content">	
+			<form action="{% url 'patient_new' %}">
+				<input class = "btn" type="submit" value="New Patient">
+			</form>
+			<form action="{% url 'patient_edit' %}">
+				<input class = "btn" type="submit" value="Edit Patient">
+			</form>
+			<form action="{% url 'patient_view' %}">
+				<input class = "btn" type="submit" value="View Patients">
+			</form>
+		</div>
+	</body>
 </html>

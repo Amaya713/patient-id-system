@@ -11,4 +11,6 @@ from . import views
 urlpatterns = [
 	url(r'^$', views.init, name = 'init'),
 	url(r'^patient/new/$', views.patient_new, name = 'patient_new'),
+	url(r'^patient/edit/$', views.patient_edit, name = 'patient_edit'),
+	url(r'^patient/view/$', views.patient_view, name = 'patient_view'),
 ]

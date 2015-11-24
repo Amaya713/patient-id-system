@@ -1,0 +1,10 @@
+{% load staticfiles %}
+<div>
+	<h1><a href="/">Patient Identifaction System: Patient List</a></h1>
+</div>
+
+{% for patient in patients %}
+	<div>
+		<p><a href="">{{ patient.title }}</a></p>
+	</div>
+{% endfor %}
